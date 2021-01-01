@@ -8,10 +8,14 @@
     <script src="bank.js"></script>
     <style>
         .main{
-            margin-top: 10%;
+            margin-top: 1%;
         }
         body{
-            background-color: powderblue;
+         background-image: url('image/smbpay.jpg'); 
+        background-repeat: no-repeat;
+        background-size: cover;
+           
+        
         }
     </style>
 </head>
@@ -21,26 +25,26 @@
         
         <div class="row">
             <div class="main">
-                <h1  class="text-center" style="color:#304af2">Welcome to SBN Bank</h1>
+                <h1  class="text-center" style="color:darkblue"><strong>Welcome to SBM Bank</strong></h1>
             <div class="mb-3">
                 <div class="form-group">
-                    <label for="" style="color:#3028c9">Username</label>
+                    <label for="" style="color:#000000"><strong>Username</strong></label>
                     <input type="text" id="uname" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="" style="color:#3028c9">Password</label>
+                    <label for="" style="color:#000000"><strong>Password</strong></label>
                     <input type="password" id="pwd" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="" style="color:#3028c9">Amount</label>
+                    <label for="" style="color:#000000"><strong>Amount</strong></label>
                     <input type="text" id="amt" class="form-control">
                 </div>
           
                 <br>
-                <div class="col-md-12 text-center">
-                <button type="submit" onclick="Bank.deposit()" class="btn btn-primary btn-lg">Deposit</button>
+                <div class="col-md-12 ">
+                <button type="submit" onclick="Bank.deposit()" class="btn btn-primary ">Deposit</button>
 
-                 <button type="submit" onclick="Bank.withdraw()" class="btn btn-primary btn-lg">Withdrawal</button>
+                 <button type="submit" onclick="Bank.withdraw()" class="btn btn-primary ">Withdrawal</button>
             
                 </div>
             </div>
