@@ -1,0 +1,28 @@
+<div class="col-6">
+    <br>
+    <h1>User <span class="one">Details</span>    !</h1>
+    <hr style="height:4px;border-width:0;color:green;background-color:green">
+    <br>
+<table>
+    <thead>
+    <tr>
+        <td>ACNO</td>
+        <td>BALANCE</td>
+        <td>USERNAME</td>
+        <!-- <td>PASSWORD</td> -->
+        <td>Update</td>
+
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let item of users">
+        <td>{{item.acno}}</td>
+        <td>{{item.balance}}</td>
+        <td>{{item.username}}</td>
+        <!-- <td>{{item.password}}</td> -->
+        <td><button (click)="edit(item)">EDIT</button></td>
+
+    </tr>
+</tbody>
+</table>
+</div>

@@ -1,0 +1,50 @@
+
+    <div class="bg">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="/assets/images.png" alt="" width="30" height="24">
+              </a>
+            </div>
+          </nav>
+          <button (click)="logout()" class="btn btn-info "style="float: right" >Logout</button>
+    <div class="container">
+        <form [formGroup]="homeForm">
+        <div class="row">
+            <div class="main">
+                <h1   style="margin-top: 12%; margin-left: 4%;color:darkblue"><strong>SBM <span style="color:#035afc ;">Bank</span></strong></h1>
+                <br>
+                <a routerLink="/history">History</a>
+                
+                
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="" style="color:#000000"><strong>Username</strong></label>
+                    <input formControlName="username" type="text" name="uname" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="" style="color:#000000"><strong>Password</strong></label>
+                    <input formControlName="password" type="password" name="pwd" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="" style="color:#000000"><strong>Amount</strong></label>
+                    <input formControlName="amount" type="number" name="amt" class="form-control">
+                </div>
+          
+                <br>
+                <div class="col-md-12 ">
+                <button type="submit" (click)="deposit()" class="btn btn-success ">DEPOSIT</button>&nbsp;
+
+                 <button type="submit" (click)="withdraw()" class="btn btn-danger ">WITHDRAW</button>
+            
+                </div>
+            </div>
+            </div>
+            </div>
+
+        </form>
+        </div>
+    </div>
+
+    
+

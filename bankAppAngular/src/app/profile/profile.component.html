@@ -1,0 +1,94 @@
+<div class="background-Image">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/images.png" alt="" width="30" height="24">
+        </a>
+      </div>
+    </nav>
+  
+  
+  
+    <div class="container">
+      <div class="row">
+  
+        <h1 style="margin-top: 8%; margin-left: 4%; color: darkblue;">SBM <span style="color:#035afc">Bank</span></h1>
+        <div class="col-4" style="margin-top:3%">
+        <!-- <input type="text" [(ngModel)]="test"> -->
+          <form [formGroup]="profileForm" (ngSubmit)="updateProfile()">
+  
+            <div class="form-group" style="align-content: center;">
+  
+            </div><br>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label" style="color:darkblue"><strong>UserName<span
+                    class="required">*</span></strong></label>
+              <input formControlName="username" name="username" type="text" class="form-control"
+                aria-describedby="emailHelp">
+              <div *ngIf="profileForm.get('username')?.touched && profileForm.get('username')?.errors">
+                <label *ngIf="profileForm.get('username')?.errors" style="color: red;">Invalid username</label>
+              </div>
+  
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label" style="color:darkblue"><strong>Balance<span
+                    class="required">*</span></strong></label>
+              <input formControlName="balance" name="balance" type="text" class="form-control">
+              <div *ngIf="profileForm.get('balance')?.touched && profileForm.get('balance')?.errors">
+                <label *ngIf="profileForm.get('balance')?.errors?.required" style="color: red;">Balance is
+                  required</label>
+               
+              </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label" style="color:darkblue"><strong>Account No<span
+                      class="required">*</span></strong></label>
+                <input formControlName="acno" name="acno" type="text" class="form-control"
+                  aria-describedby="emailHelp">
+                <div *ngIf="profileForm.get('acno')?.touched && profileForm.get('acno')?.errors">
+                  <label *ngIf="profileForm.get('acno')?.errors" style="color: red;">Invalid username</label>
+                </div>
+    
+              </div>
+            <div class="col-md-12  text-center">
+              <button type="submit" class="btn  btn-success btn-lg btn-block ">Submit</button>
+            </div>
+          </form>
+  
+  
+        </div>
+        <div class="col-3" style=" margin-left: 60%">
+  
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/assets/bank1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/bank7.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/bank8.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+  
+  
+      </div>
+
+
+
